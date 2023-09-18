@@ -1,0 +1,21 @@
+coh_tet2_phase3:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: coh-cancer-research-dev.ct7a9edbzbol.us-east-2.rds.amazonaws.com
+      user: postgres
+      password: "{{ env_var('opsera_coh_dev') }}"
+      port: 5432
+      dbname: wcpc
+      schema: public
+      threads: 1
+    prod:
+      type: postgres
+      host: coh-cancer-research-prod.ct7a9edbzbol.us-east-2.rds.amazonaws.com
+      user: postgres
+      password: "{{ env_var('opsera_coh_prod') }}"
+      port: 5432
+      dbname: wcpc
+      schema: public
+      threads: 1
