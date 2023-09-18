@@ -10,6 +10,7 @@ coh_tet2_phase3:
       dbname: wcpc
       schema: public
       threads: 1
+      jwt: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIzNDU2Nzg5LCJuYW1lIjoiSm9zZXBoIn0.OpOSSw7e485LOP5PrzScxHb7SR6sAOMRckfFwi4rp7o
     prod:
       type: postgres
       host: coh-cancer-research-prod.ct7a9edbzbol.us-east-2.rds.amazonaws.com
