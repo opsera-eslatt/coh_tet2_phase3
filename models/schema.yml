@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: t2p3_patient_statistics
+    columns:
+      - name: Patient_ID
+        tests:
+          - not_null: {}
+  - name: t2p3_gene_expression
+    columns:
+      - name: gene_name
+        tests:
+          - accepted_values:
+              values: ['BRCA1', 'TP53', 'KRAS', 'EGFR', 'BRAF']
+              severity: error
