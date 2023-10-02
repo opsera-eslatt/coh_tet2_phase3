@@ -11,7 +11,7 @@ models:
       - name: gene_name
         tests:
           - accepted_values:
-              values: ['BRCA1', 'TP53', 'KRAS', 'EGFR', 'BRAF']
+              values: ['BRCA1', 'TP53', 'KRAS', 'EGFR', 'BRAF', 'Ed']
               severity: error
       - name: total_samples
         tests:
