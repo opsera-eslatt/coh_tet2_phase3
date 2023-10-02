@@ -8,6 +8,11 @@ models:
           - not_null: {}
   - name: t2p3_gene_expression
     columns:
+      - name: gene_name
+        tests:
+          - accepted_values:
+              values: ['BRCA1', 'TP53', 'KRAS', 'EGFR']
+              severity: error
       - name: total_samples
         tests:
           - not_null: {}
